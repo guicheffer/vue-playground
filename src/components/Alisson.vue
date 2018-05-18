@@ -12,6 +12,9 @@ export default {
     return {
       msg: 'alisson é lindo'
     }
+  },
+  asyncData () {
+    console.log('#AQUI#')
   }
 }
 </script>

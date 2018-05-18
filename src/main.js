@@ -4,12 +4,17 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-Vue.config.productionTip = false
+// Vue.config.productionTip = false
+// Vue.prototype.$isServer
 
-/* eslint-disable no-new */
-new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
-})
+export function createApp() {
+  return {
+    app: new Vue({
+      router,
+      // components: { App },
+      // template: '<App/>',
+      render: h => h(App)
+    }),
+    router: router,
+  }
+};

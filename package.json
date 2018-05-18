@@ -10,8 +10,13 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "express": "^4.16.3",
+    "jsdom": "^11.10.0",
+    "path": "^0.12.7",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.16",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

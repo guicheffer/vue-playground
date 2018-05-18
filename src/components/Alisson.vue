@@ -1,17 +1,16 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <router-link to="/alisson"> Alisson </router-link>
+    <router-link to="/"> voutar </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Alisson',
   data () {
     return {
-      msg: 'welcome'
+      msg: 'alisson é lindo'
     }
   }
 }
